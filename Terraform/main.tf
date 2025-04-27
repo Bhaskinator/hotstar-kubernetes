@@ -41,7 +41,7 @@ resource "aws_security_group" "ec2_security_group" {
 }
 
 resource "aws_instance" "Monitoring_server" {
-ami = "ami-0c2b8ca1dad447f8a"  
+ami = "ami-0b67d6ae7980dd799"  
 instance_type = "t2.medium"
 security_groups = [aws_security_group.ec2_security_group.name]
 key_name = var.key_name
